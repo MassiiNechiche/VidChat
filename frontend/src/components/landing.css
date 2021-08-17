@@ -1,0 +1,193 @@
+.container {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing {
+  padding: 10px;
+  margin: 50px 50px;
+  color: #d0d9e2;
+  width: 50%;
+}
+
+.landing__buttons {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.landing__buttons .new {
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 17px;
+  background-color: #e52840;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.landing__buttons .new:hover {
+  background-color: #f0425a;
+}
+
+.landing__buttons .new .MuiSvgIcon-root {
+  margin-left: 15px;
+}
+
+.landing__buttons .join {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  font-size: 17px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.landing__buttons .join .MuiSvgIcon-root {
+  margin-left: 15px;
+}
+
+.landing__buttons .join:hover {
+  background-color: #1c232b;
+}
+
+/* .landing__contacts {
+  border: 1px solid red;
+} */
+
+.landing__contacts h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.landing__contacts h3 a {
+  font-weight: 400;
+  font-size: 13px;
+  color: #c6cdd6;
+}
+
+.contacts__images {
+  display: flex;
+  margin-top: 30px;
+}
+
+.contacts__images img {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.callCenter {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: -70px;
+  background-color: #0e0e0ee0;
+}
+
+.caller__panel {
+  position: relative;
+}
+
+.callerVideo {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.callerVideo video {
+  width: 850px;
+}
+
+.myVideo video {
+  width: 150px;
+  z-index: 5;
+  display: block;
+}
+.myVideo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.caller__panel .fade {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    #101111 100%
+  );
+}
+
+.caller__panel .buttons {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.caller__panel .buttons .Button {
+  color: rgb(226, 230, 236);
+  font-size: 30px;
+  margin: 0px 15px;
+  border-radius: 100%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 6;
+  background-color: #1c1c25a9;
+  transition: all ease-in-out 200ms;
+}
+
+.buttons .endedCall {
+  background-color: #f00c0c !important;
+}
+.buttons .endedCall:hover {
+  background-color: #ee2e2e !important;
+  animation: glowRed 0.8s infinite;
+}
+
+.timer {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1315167a;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.timer .MuiSvgIcon-root {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@keyframes glowRed {
+  0% {
+    box-shadow: 0px 0px 20px 6px rgba(218, 11, 11, 0.2);
+  }
+  100% {
+    box-shadow: 5px 5px 20px 5px rgba(194, 32, 32, 0.521);
+  }
+}

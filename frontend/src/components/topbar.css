@@ -1,0 +1,41 @@
+.topbar {
+  width: calc(100vw - 70px);
+  margin-left: 70px;
+  position: sticky;
+}
+
+.user__area {
+  width: 250px;
+  height: 60px;
+  background-color: #1c232b;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  margin-left: 50px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.user__area span {
+  font-size: 17px;
+  color: #919eaa;
+  margin-left: 15px;
+}
+
+.user__area .MuiSvgIcon-root {
+  animation: glowGreen 1.2s infinite;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+@keyframes glowGreen {
+  0% {
+    color: rgba(97, 238, 84, 0.788);
+  }
+  100% {
+    color: rgb(97, 238, 84);
+  }
+}
